@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet"href="survey.css">
+    <script type="text/javascript"src="survey.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet"href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    
+
+</head>
+<body class="container-fluid">
+    <div class="rounded divi">
+        <h3 class="mt-4 text-primary">Customer Survey Form</h3>
+        <form method="get" class="mt-4">
+           <label class="form-label" for="fn">First Name</label><br> 
+           <input type="text"id="fn"name="fname" class=" ms-5 mb-4"pattern="\w"minlenght="5"maxlenght="15"placeholder="15 chars max"required><br>
+        <label class="form-label"for="ln">Last Name</label><br> 
+        <input type="text"id="ln"name="lname"required class=" ms-5 mb-4"pattern="\w"minlenght="5"maxlenght="15"placeholder="15 chars max"required><br>
+        <label class="form-label"for="date">Date of Brith</label><br> 
+        <input type="date"id="date"name="day"required class=" ms-5 mb-4"><br>
+        <label class="form-label" >Country</label><br> 
+        <select id="country"required class=" ms-5 mb-4"id="country"><br>
+            <option>Select Country</option>
+            <option>India</option>
+            <option>Uk</option>
+            <option>Us</option>
+        </select><br>
+        <label class="form-check-label">Gender</label><br> 
+        <input id="gender"type="radio"class="form-check-input"class=" ms-5 mb-4"name="gender">Female
+        <input  id="gender"type="radio"class="form-check-input"class=" ms-5 mb-4"name="gender">Male<br>
+        <label class="form-label" for="profession">Profession</label><br>
+        <input type="text"id="profession"name="pro" required class=" ms-5 mb-4"><br>   
+             <label class="form-label"for="emial">Email</label><br>
+             <input type="email"id="email"name="emailid"required class=" ms-5 mb-4"pattern="gmail\.com"><br>
+        <label class="form-label">Mobile No</label><br>
+        <input type="number"id="phno"name="mobile"required class=" ms-5 mb-4"pattern="\d{10}"><br>
+    <button class="btn btn-primary ms-4"data-bs-target="#submission"data-bs-toggle="modal"id="btn"onclick="bodyload()">Submit</button>
+        <div class="modal fade"id="submission">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="model-header">
+                        <h3>Customer Details</h3>
+                        <button data-bs-dismiss="modal" class="btn-close" type="reset"></button>
+                    </div>
+                    <div class="modal-body">
+                        <dl>
+                            <dt>First Name:</dt>
+                            <dd id="fntxt"></dd>
+                            <dt>Last Name:</dt>
+                            <dd id="lntxt"></dd>
+                            <dt>Date Of Brith:</dt>
+                            <dd id="datetxt"></dd>
+                            <dt>Country:</dt>
+                            <dd id="countrytxt"></dd>
+                            <dt>Gender:</dt>
+                            <dd id="gendertxt"></dd>
+                            <dt>Profession</dt>
+                            <dd id="Professiontxt"></dd>
+                            <dt>Email:</dt>
+                            <dd id="Emailtxt"></dd>
+                            <dt>Mobile No:</dt>
+                            <dd id="mobiletxt"></dd>
+                        </dl>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+            <button class="btn btn-secondary"id="btn">Reset</button>
+        </form>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

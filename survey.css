@@ -1,0 +1,42 @@
+.divi{
+    width: 900px;
+    height: 1100px;
+    background-color: white;
+    font-size: 25px;
+    font-family: arial;
+    border: 1px solid grey;
+    margin-left: 160px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    background-image: linear-gradient(to bottom,darkcyan,skyblue,black);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    
+}
+label{
+  
+    margin-left: 40px;
+}
+h3{
+     
+    margin-top: 20px;
+    text-align: center;
+}
+#btn{
+    font-size: 20px;
+    padding: 10px;
+    font-family: arial;
+
+}
+#gender{
+    margin-left: 30px;
+}
+
